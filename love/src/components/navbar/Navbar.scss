@@ -1,0 +1,36 @@
+$font-roboto: "Roboto", sans-serif;
+
+.navbar{
+    width: 100%;
+
+    &__container{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__list{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    &__item{
+        justify-content: space-evenly;
+        font-size: 15px;
+        font-family: $font-roboto;
+
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    &__itemImg{
+        width: 80px;
+        height: 80px;
+    }
+}
