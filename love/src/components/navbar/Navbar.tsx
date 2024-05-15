@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import "./Navbar.scss"
 export default function Navbar() {
   return (
@@ -10,7 +11,7 @@ export default function Navbar() {
                 <li className="navbar__item">
                     <img className="navbar__itemImg" src="https://www.onlygfx.com/wp-content/uploads/2021/02/6-pixel-heart-6.png" alt="logo" />
                 </li>
-                <li className="navbar__item">LOGIN</li>
+                <Link to="/login" className="navbar__item">LOGIN</Link>
                 <li className="navbar__item">RECOMMENED</li>
                 <li className="navbar__item">ARCHIVE</li>
             </ul>
