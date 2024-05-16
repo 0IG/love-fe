@@ -1,5 +1,7 @@
 import "./Home.scss"
 export default function Home() {
+  console.log(process.env.REACT_APP_API_KEY)
+  console.log('test')
   return (
     <div className="home">
         <h1 className="home__title">LETTERS TO YOU</h1>

@@ -10,6 +10,7 @@ import Archive from "./components/archive/Archive"
 import BadRoute from "./components/404/BadRoute"
 import "./App.css"
 export default function App() {
+
   return (
     <div className="app">
       <Navbar/>
