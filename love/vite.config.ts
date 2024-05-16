@@ -6,7 +6,12 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
     define: {
-      'process.env.SOME_KEY': JSON.stringify(env.SOME_KEY)
+      'process.env.REACT_APP_FIREBASE_API_KEY': JSON.stringify(env.REACT_APP_FIREBASE_API_KEY),
+      'process.env.REACT_APP_AUTH_DOMAIN': JSON.stringify(env.REACT_APP_AUTH_DOMAIN),
+      'process.env.REACT_APP_PROJECTS_ID': JSON.stringify(env.REACT_APP_PROJECTS_ID),
+      'process.env.REACT_APP_FIREBASE_STORAGE_BUCKET': JSON.stringify(env.REACT_APP_STORAGE_BUCKET),
+      'process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID': JSON.stringify(env.REACT_APP_MESSAGING_SENDER_ID),
+      'process.env.REACT_APP_MEASUREMENT_ID': JSON.stringify(env.REACT_APP_MEASUREMENT_ID)
     },
     plugins: [react()],
   }
