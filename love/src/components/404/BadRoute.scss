@@ -1,0 +1,17 @@
+$font-roboto: 'Roboto', sans-serif;
+
+.badRoute{
+    display: flex;
+    flex-direction: column;
+    font-family: $font-roboto;
+    justify-content: center;
+    align-items: center;
+
+    &__description{
+        font-size: 2em;
+    }
+    &__title{
+        font-size: 5rem;
+        font-family: $font-roboto;
+    }
+}
