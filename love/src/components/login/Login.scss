@@ -1,0 +1,41 @@
+$font-roboto: 'Roboto', sans-serif;
+.login{
+    font-family: $font-roboto;
+    margin-top: 100px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__inputUser{
+        border: 1px solid black;
+        outline: none;
+    
+    }
+
+    &__inputPasswrd{
+        border: 1px solid black;
+        outline: none;
+
+    }
+
+    &__btnLogin{
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+    }
+
+    &__btnRegister{
+        border: none;
+        background-color: white;
+        color: #707070;
+        font-size: 11px;
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
