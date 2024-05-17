@@ -8,6 +8,8 @@ import Login from "./components/login/Login"
 import Recommended from "./components/recommended/Recommended"
 import Archive from "./components/archive/Archive"
 import BadRoute from "./components/404/BadRoute"
+import Signup from "./components/signup/Signup"
+
 import "./App.css"
 export default function App() {
 
@@ -20,6 +22,7 @@ export default function App() {
       <Route path="/locations" element={<Locations/>}/>
       <Route path="/list" element={<List/>}/>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/signup" element={<Signup/>}/>
       <Route path="/recommended" element={<Recommended/>}/>
       <Route path="/archive" element={<Archive />}/>
       <Route path="*" element={<BadRoute/>}/>
