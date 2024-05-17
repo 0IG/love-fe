@@ -22,6 +22,7 @@ export default function signup() {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log("Shit hit the fan")
+        console.log('Testing fix')
         console.log(errorCode, errorMessage);
       });
   };
